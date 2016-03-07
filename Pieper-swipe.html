@@ -55,7 +55,7 @@
     <div class="swiper-wrapper">
 
         <!-- page 1 -->
-        <div class="swiper-slide" data-hash="Pagina1" data-tn="http://qwerqwer" data-title="Cover Pieper blad" data-subtitle="subtitel1">
+        <div class="swiper-slide" data-hash="Pagina1" data-tn="http://qwerqwer" data-title="Cover <br> Pieper blad" data-subtitle="subtitel1">
 
             <!-- like and share -->
     <div class="like-share1">
@@ -73,7 +73,7 @@
         </div>
 
         <!-- page 2 -->
-        <div class="swiper-slide" data-hash="Pagina2" data-tn="http://qwerqwer" data-title="Heading met ruimte voor twee regels"data-subtitle="subtitel2">
+        <div class="swiper-slide" data-hash="Pagina2" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtitel2">
 
             <!-- like and share -->
     <div class="like-share2">
@@ -152,7 +152,7 @@
         </div>
 
         <!-- page 3 -->
-        <div class="swiper-slide" data-hash="Pagina3" data-tn="http://qwerqwer" data-title="Heading met ruimte voor twee regels"data-subtitle="subtitel3">
+        <div class="swiper-slide" data-hash="Pagina3" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtitel3">
 
             <!-- like and share -->
     <div class="like-share3">
@@ -265,10 +265,10 @@
                 paginationBulletRender: function(index, className) {
                     var slide = swiperWrapper.find('.swiper-slide').get(index);
                     var slide = $(slide);
-                    var ret = '<div class="item" data-index="'+index+'"><div class="tn"><img src="http://findicons.com/files/icons/562/glaze/128/empty.png" hight="20" width="20"></div><div class="right">';
-                        ret += '<h3>' + slide.data('title') + '</h3>' + '<br>';
+                    var ret = '<div class="item" data-index="'+index+'"><div class="tn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Circle_-_black_simple_fullpage.svg/2000px-Circle_-_black_simple_fullpage.svg.png" hight="40" width="40"></div><div class="right">';
+                        ret += '<h3> <br>' + slide.data('title') + '</h3>' + '<br>';
                         if (slide.data('subtitle') != undefined) {
-                            ret += '<h5>' + slide.data('subtitle') + '</h5>';
+                            ret += '<h5> <br>' + slide.data('subtitle') + '</h5>';
                         }
                         ret += '</div></div>';
                     return ret;

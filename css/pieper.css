@@ -82,14 +82,19 @@
             color: yellow;
             background-color: #b3b3b3;
           }
+          .tn img {
+            position: absolute;
+            margin-top: 10%;
+            display: block;
+          }
           h3 {
-            margin-left: 3%;
-            margin-right: 3%;
             text-align: center;
+            display: block;
+            margin-left: -2%;
           }
           h5 {
-            height: 250px;
-            text-align: center;
+            height: 280px;
+            margin-left: 40%;
           }
           .pagi-footer {
             bottom: 0;
