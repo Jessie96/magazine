@@ -1,0 +1,124 @@
+          /* Styles */
+          .swiper-slide img{
+            margin-top: 4%;
+            margin-bottom: 5.5%;
+          }
+          .swiper-slide p{
+            margin-top: 1.5%;
+            margin-bottom: 1.6%;
+          }
+          #container {
+            height: 500px;
+            width: 500px;
+          }
+          .info {
+            z-index: 3;
+            margin-top: -1%;
+            text-align: left;
+            display: inline;
+            font-family: Helvetica Neue, Helvetica, Arial;
+            color: white;
+            position: absolute;
+          }
+          .info p {
+            display: inline-block;
+            border: solid 10px #262626;
+            border-right-color: yellow;
+            background: #262626;
+            margin-top: -25%;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 100px;
+            padding-right: 30px;
+          }
+          .ico {
+            position: absolute;
+            margin-top: -17%;
+        }
+          #volgende1 {
+            display: inline-block;
+            position: absolute;
+            margin-top: 100%;
+            margin-left: 77%;
+          }
+          #volgende2 {
+            display: inline-block;
+            position: absolute;
+            margin-top: 100%;
+            margin-bottom: 1%;
+            margin-left: 42.2%;
+          }
+          #vorige1 {
+            display: inline-block;
+            position: absolute;
+            margin-top: 100%;
+            margin-left: -48.3%;
+          }
+          #vorige2 {
+            display: inline-block;
+            position: absolute;
+            margin-top: 100%;
+            margin-left: -34.2%;
+          }
+          #pagination {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index:10;
+            background: gray;
+            width: 10%;
+            height: 100%;
+          }
+          .right{
+            margin-right: 2%;
+            margin-left: 2%;
+          }
+          .item {
+            position: static;
+            border-bottom: solid yellow 2px;
+          }
+          #pagination > div:nth-child(1):hover {
+            color: yellow;
+            background-color: #b3b3b3;
+          }
+          #pagination > div:nth-child(2):hover {
+            color: yellow;
+            background-color: #b3b3b3;
+          }
+          #pagination > div:nth-child(3):hover {
+            color: yellow;
+            background-color: #b3b3b3;
+          }
+          h3 {
+            margin-left: 3%;
+            margin-right: 3%;
+            text-align: center;
+          }
+          h5 {
+            height: 250px;
+            text-align: center;
+          }
+          .pagi-footer {
+            margin-top: 0%;
+            position: relative;
+            border: solid yellow 2px;
+            z-index: 3;
+            float: right;
+            display: inline-block;
+            background-color: yellow;
+            padding-left: 1.85%;
+            padding-top: 0.2%;
+            padding-bottom: 0.2%;
+            padding-right: 2%;
+          }
+          .like-share1 {
+            float: right;
+          }
+          .like-share2 {
+            float: right;
+          }
+          .like-share3 {
+            float: right;
+          }
