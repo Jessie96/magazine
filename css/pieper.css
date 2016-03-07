@@ -4,8 +4,9 @@
             margin-bottom: 5.5%;
           }
           .swiper-slide p{
+            display: block;
             margin-top: 1.5%;
-            margin-bottom: 1.6%;
+            margin-bottom: 1.7%;
           }
           #container {
             height: 500px;
@@ -13,10 +14,11 @@
           }
           .info {
             z-index: 3;
-            margin-top: -1%;
+            bottom: 0;
+            left: 0;
             text-align: left;
             display: inline;
-            font-family: Helvetica Neue, Helvetica, Arial;
+            font-family: Helvetica, Arial;
             color: white;
             position: absolute;
           }
@@ -33,61 +35,50 @@
             padding-left: 100px;
             padding-right: 30px;
           }
+          .info a:visited {
+            color: purple;
+        }
           .ico {
             position: absolute;
-            margin-top: -17%;
+            bottom: 50%;
         }
           #volgende1 {
             display: inline-block;
             position: absolute;
-            margin-top: 100%;
-            margin-left: 77%;
+            bottom: 0;
+            right: 0;
           }
           #volgende2 {
             display: inline-block;
             position: absolute;
-            margin-top: 100%;
-            margin-bottom: 1%;
-            margin-left: 42.2%;
+            bottom: 0;
+            right: 0;
           }
           #vorige1 {
             display: inline-block;
             position: absolute;
-            margin-top: 100%;
-            margin-left: -48.3%;
+            bottom: 0;
+            left: 0;
           }
           #vorige2 {
             display: inline-block;
             position: absolute;
-            margin-top: 100%;
-            margin-left: -34.2%;
+            bottom: 0;
+            left: 0;
           }
           #pagination {
             position: absolute;
-            top: 0px;
-            right: 0px;
+            top: 0;
+            right: 0;
             z-index:10;
             background: gray;
             width: 10%;
             height: 100%;
           }
-          .right{
-            margin-right: 2%;
-            margin-left: 2%;
-          }
           .item {
-            position: static;
             border-bottom: solid yellow 2px;
           }
-          #pagination > div:nth-child(1):hover {
-            color: yellow;
-            background-color: #b3b3b3;
-          }
-          #pagination > div:nth-child(2):hover {
-            color: yellow;
-            background-color: #b3b3b3;
-          }
-          #pagination > div:nth-child(3):hover {
+          .item:hover {
             color: yellow;
             background-color: #b3b3b3;
           }
@@ -101,8 +92,9 @@
             text-align: center;
           }
           .pagi-footer {
-            margin-top: 0%;
-            position: relative;
+            bottom: 0;
+            right: 0;
+            position: absolute;
             border: solid yellow 2px;
             z-index: 3;
             float: right;
@@ -114,11 +106,17 @@
             padding-right: 2%;
           }
           .like-share1 {
-            float: right;
+            position: absolute;
+            right:0;
+            display: inline;
           }
           .like-share2 {
-            float: right;
+            position: absolute;
+            right:0;
+            display: inline;
           }
           .like-share3 {
-            float: right;
+            position: absolute;
+            right:0;
+            display: inline;
           }
