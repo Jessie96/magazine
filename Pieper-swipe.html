@@ -260,58 +260,6 @@
                 }
             });
 
-                   //throttle\\
-    //             function throttle(delay, callback) {
-    //                 var previousCall = new Date().getTime();
-    //                 return function() {
-    //                     var time = new Date().getTime();
-
-    //         if ((time - previousCall) >= delay) {
-    //             previousCall = time;
-    //             callback.apply(null, arguments);
-    //         }
-    //     };
-    // }           $(".swiper-slide").scroll(throttle(5000, function() {
-
-                //scroll nav\\
-                // var to;   
-                // var slide = function(o) {
-                //     //  if ($(o).scrollTop() + $(o).innerHeight() >= $()[0].scrollHeight) {
-                //     //     console.log(o);
-                //     //     var swipe = function() {
-                //     //         swiper.slideNext(true, 330);
-                //     //         $(o).scrollTop(0);
-                //     //     };
-                //     //     // if (confirm("wilt u naar de volgende pagina gaan?")) {
-                //     //         // setTimeout([5000]);
-                //     //         swipe();
-                //     //     // }
-                //     //     // else {
-                //     //     //     return false;
-                //     //     // }
-                //     // }
-                // };  
-                // $(".swiper-slide").scroll(function(i) {
-                //     if (to) {
-                //         clearTimeout(to);
-                //         to = null;
-                //     };
-                //     to = setTimeout(function() {
-                //         slide(this);
-                //     }, 100);
-
-                // });
-            // }));
-
-            //scroll to top on swipe\\
-            // if (swiper.slideNext(true, 330)) 
-            //     {$(".swiper-slide").scrollTop(0);
-            // };
-
-            // if (swiper.slidePrev(true, 330)) 
-            //     {$(".swiper-slide").scrollTop(0);
-            // };
-
             //pagi nav\\
                 $('#pagination').on('click', '.item', function() {
                     swiper.slideTo($(this).data('index'));
@@ -330,26 +278,7 @@
                 $("#vorige2").click(function() {
                     swiper.slidePrev(true, 330);
                 });
-                // $("#button1").click(function() {
-                //     swiper.slidePrev(true, 330);
-                // });
-                // $("#button2").click(function() {
-                //     swiper.slideNext(true, 330);
-                // });
-
-
         }();
     </script>
-
-    <!--
-        <script src="file://D:/school/usbw/root/magazine/plug-ins/scrollprogress-master/dist/scrollprogress.js"></script>
-<script type="text/javascript">
-
-
-$(function() {
-                 scrollProgress.set();
-
-}); 
-</script> -->
 </body>
 </html>
