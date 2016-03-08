@@ -24,7 +24,7 @@
 
         <!-- like and share -->
     <div class="like-share1">
-        
+
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -92,7 +92,7 @@
 
         <!-- like and share -->
     <div class="like-share3">
-        
+
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -170,6 +170,9 @@
                 effect: 'coverflow',
                 loop: false,
                 speed: 400,
+                iOSEdgeSwipeDetection: false,
+                ìOSEdgeSwipeThreshold: 10,
+                scrollbarhide: true,
                 paginationBulletRender: function(index, className) {
                     var slide = swiperWrapper.find('.swiper-slide').get(index);
                     var slide = $(slide);
