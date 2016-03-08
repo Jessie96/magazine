@@ -1,9 +1,9 @@
           /* Styles */
-          .swiper-slide img{
+          .swiper-slide img {
             margin-top: 4%;
             margin-bottom: 5.5%;
           }
-          .swiper-slide p{
+          .swiper-slide p {
             display: block;
             margin-top: 1.5%;
             margin-bottom: 1.7%;
@@ -34,11 +34,11 @@
           }
           .info a:visited {
             color: purple;
-        }
+          }
           .ico {
             position: absolute;
             bottom: 50%;
-        }
+          }
           #volgende1 {
             display: inline-block;
             position: absolute;
@@ -90,8 +90,8 @@
             margin-left: -2%;
           }
           h5 {
+            text-align: center;
             height: 280px;
-            margin-left: 40%;
           }
           .pagi-footer {
             bottom: 0;
@@ -109,21 +109,21 @@
             padding-right: 2%;
           }
           .pagi-footer p {
-            display: inline;
-            margin-left: 50px;
+            display: inline-block;
+            margin-left: 25%;
           }
           .like-share1 {
             position: absolute;
             right:0;
-            display: inline;
+            display: inline-block;
           }
           .like-share2 {
             position: absolute;
             right:0;
-            display: inline;
+            display: inline-block;
           }
           .like-share3 {
             position: absolute;
             right:0;
-            display: inline;
+            display: inline-block;
           }

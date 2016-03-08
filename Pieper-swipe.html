@@ -49,6 +49,32 @@
     </style>
 </head>
 <body>
+    <!-- script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script -->
 
     <!-- Swiper -->
 <div class="swiper-container">
@@ -59,6 +85,8 @@
 
             <!-- like and share -->
     <div class="like-share1">
+        <div class="fb-share-button" data-href="file:///D:/School/USBW/root/Magazine/pieper-blad/Pieper-swipe.html" data-layout="icon_link">
+        </div>
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -69,7 +97,7 @@
         <div id="volgende1">
             <button>Volgende</button>
         </div>
-            <img src="http://img.timeinc.net/time/magazine/archive/covers/2006/1101061023_400.jpg " hight="580" width="600">
+            <img src="http://img.timeinc.net/time/magazine/archive/covers/2006/1101061023_400.jpg " hight="600" width="600">
         </div>
 
         <!-- page 2 -->
@@ -77,6 +105,8 @@
 
             <!-- like and share -->
     <div class="like-share2">
+        <div class="fb-share-button" data-href="file:///D:/School/USBW/root/Magazine/pieper-blad/Pieper-swipe.html" data-layout="icon_link">
+        </div>
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -156,6 +186,8 @@
 
             <!-- like and share -->
     <div class="like-share3">
+        <div class="fb-share-button" data-href="file:///D:/School/USBW/root/Magazine/pieper-blad/Pieper-swipe.html" data-layout="icon_link">
+        </div>
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -236,7 +268,7 @@
     </div><p>Magazine: Pieper Blad <br><br> Uitgegeven door: Bureau Pieper <br><br> Website:
     <a href="https://www.linkedin.com/company/bureau-pieper">Bureau Pieper</a></p>
 </div>
-    
+
     <!-- pagi-footer -->
     <div class="pagi-footer">
        <p> volg ons:</p>
@@ -252,6 +284,7 @@
 
     <!-- JS -->
     <script>
+
     //initialize swiper\\
         !function() {
             var indexContainer = [];
@@ -261,7 +294,7 @@
                 effect: 'coverflow',
                 loop: false,
                 mousewheelSensitivity: 1,
-                mousewheelControl: true,
+                mousewheelControl: false,
                 paginationBulletRender: function(index, className) {
                     var slide = swiperWrapper.find('.swiper-slide').get(index);
                     var slide = $(slide);
