@@ -1,4 +1,4 @@
-/**
+/*
  * Swiper 3.2.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
@@ -73,7 +73,7 @@
             scrollbarSnapOnRelease: true,
             // Keyboard Mousewheel
             keyboardControl: true,
-            mousewheelControl: true,
+            mousewheelControl: false,
             mousewheelReleaseOnEdges: true,
             mousewheelInvert: false,
             mousewheelForceToAxis: true,

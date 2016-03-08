@@ -5,7 +5,7 @@
     <title>Pieper swiper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <!-- Link Swiper's CSS -->
+        <!-- Link Swiper's CSS -->
 
     <link rel="stylesheet" href="../pieper-blad/dist/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="../pieper-blad/CSS.reset/reset.css">
@@ -14,44 +14,17 @@
     <script src="../pieper-blad/dist/js/swiper.js"></script>
 </head>
 <body>
-    <!-- script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : 'your-app-id',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script -->
-
-    <!-- Swiper -->
+        <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
 
         <!-- page 1 -->
         <div class="swiper-slide" data-hash="Pagina1" data-tn="http://qwerqwer" data-title="Cover <br> Pieper blad" data-subtitle="subtitel1">
 
-            <!-- like and share -->
+        <!-- like and share -->
     <div class="like-share1">
-        <div class="fb-share-button" data-href="file:///D:/School/USBW/root/Magazine/pieper-blad/Pieper-swipe.html" data-layout="icon_link">
-        </div>
+        
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -68,10 +41,9 @@
         <!-- page 2 -->
         <div class="swiper-slide" data-hash="Pagina2" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtitel2">
 
-            <!-- like and share -->
+        <!-- like and share -->
     <div class="like-share2">
-        <div class="fb-share-button" data-href="file:///D:/School/USBW/root/Magazine/pieper-blad/Pieper-swipe.html" data-layout="icon_link">
-        </div>
+
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -118,10 +90,9 @@
         <!-- page 3 -->
         <div class="swiper-slide" data-hash="Pagina3" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtitel3">
 
-            <!-- like and share -->
+        <!-- like and share -->
     <div class="like-share3">
-        <div class="fb-share-button" data-href="file:///D:/School/USBW/root/Magazine/pieper-blad/Pieper-swipe.html" data-layout="icon_link">
-        </div>
+        
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <img src="http://insidepulse.com/wp-content/uploads/2015/12/Thumbs-Up-yellow-circle.png" height="25" width="25"></a><br>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -163,16 +134,18 @@
         </div>
     </div>
 
-    <!-- Add pagination -->
+        <!-- Add pagination -->
         <div id="pagination">
         </div>
     </div>
+
+        <!-- info -->
 <div class="info"><div class="ico"><img src="http://findicons.com/files/icons/562/glaze/128/empty.png" hight="80" width="80">
     </div><p>Magazine: Pieper Blad <br><br> Uitgegeven door: Bureau Pieper <br><br> Website:
     <a href="https://www.linkedin.com/company/bureau-pieper">Bureau Pieper</a></p>
 </div>
 
-    <!-- pagi-footer -->
+        <!-- pagi-footer -->
     <div class="pagi-footer">
        <p> volg ons:</p>
         <a href="https://www.linkedin.com/company/bureau-pieper" target="_blank">
@@ -185,10 +158,10 @@
             <img src="../pieper-blad/img/twitter-logo.png" height="15" width="15">
         </a>
 
-    <!-- JS -->
+        <!-- JS -->
     <script>
 
-    //initialize swiper\\
+        //initialize swiper\\
         !function() {
             var indexContainer = [];
             var swiperWrapper = $('.swiper-wrapper');
@@ -196,8 +169,7 @@
                 pagination: '#pagination',
                 effect: 'coverflow',
                 loop: false,
-                mousewheelSensitivity: 1,
-                mousewheelControl: false,
+                speed: 400,
                 paginationBulletRender: function(index, className) {
                     var slide = swiperWrapper.find('.swiper-slide').get(index);
                     var slide = $(slide);
@@ -218,16 +190,16 @@
 
                //button nav\\
                 $("#volgende1").click(function() {
-                    swiper.slideNext(true, 330);
+                    swiper.slideNext(true, 400);
                 });
                 $("#volgende2").click(function() {
-                    swiper.slideNext(true, 330);
+                    swiper.slideNext(true, 400);
                 });
                 $("#vorige1").click(function() {
-                    swiper.slidePrev(true, 330);
+                    swiper.slidePrev(true, 400);
                 });
                 $("#vorige2").click(function() {
-                    swiper.slidePrev(true, 330);
+                    swiper.slidePrev(true, 400);
                 });
         }();
     </script>

@@ -29,19 +29,15 @@
         a {
             color: blue;
         }
-          .swiper-slide img {
-            margin-top: 4%;
-            margin-bottom: 5.5%;
+          .swiper-slide img.center {
+            display: block;
+            margin: 0 auto;
           }
           .swiper-slide p {
             color: #000;
             display: block;
             margin-top: 1.5%;
             margin-bottom: 1.7%;
-          }
-          #container {
-            height: 500px;
-            width: 500px;
           }
           .info {
             z-index: 3;
@@ -101,14 +97,11 @@
             z-index:10;
             background: gray;
             width: 15%;
-            height: 99.5%;
+            height: 100%;
           }
           .item {
             background-color: #3a3a3a;
             border-bottom: solid yellow 2px;
-          }
-          .item:hover {
-            background-color: #b3b3b3;
           }
           #pagination > div:nth-child(1):hover {
             color: yellow;
@@ -128,21 +121,13 @@
             display: block;
           }
           h3 {
-            /*color: white;*/
             text-align: center;
             display: block;
             margin-left: -2%;
           }
           h5 {
-            /*color: white;*/
             text-align: center;
-            height: 280px;
-          }
-          h3:hover {
-            color: yellow;
-          }
-          h5:hover {
-            color: yellow;
+            height: 245px;
           }
           .pagi-footer {
             bottom: 0;
@@ -150,7 +135,6 @@
             position: absolute;
             border: solid yellow 3px;
             z-index: 3;
-            float: right;
             display: inline-block;
             background-color: yellow;
             width: 10.7%;
