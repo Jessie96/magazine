@@ -211,3 +211,20 @@
           bottom: 60%;
           left: 5%;
         }
+        .text-holder1 {
+          position: absolute;
+          color: #000;
+          margin-top: 410px;
+          margin-left: 50px;
+        }
+        h1 {
+          font-weight: bold;
+          margin-left: -570px;
+        }
+        h2 {
+          color: #e6e600;
+          margin-left: -570px;
+        }
+        .slide-inner p {
+          
+        }
