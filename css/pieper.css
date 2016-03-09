@@ -18,8 +18,8 @@
           position: static;
         }
         .swiper-slide {
-          margin-top: 1%;
-          height: 97%;
+          margin-top: 2%;
+          height: 96%;
           text-align: center;
           position: static;
           font-size: 18px;
@@ -33,9 +33,10 @@
         a {
           color: blue;
         }
-        .swiper-slide img.center {
+        .swiper-slide img {
           display: block;
-          margin: 0 auto;
+          height: 400px;
+          width: 750px;
         }
         .swiper-slide p {
           color: #000;
@@ -160,16 +161,19 @@
         .like-share1 {
           position: absolute;
           right: -25px;
+          top: 25px;
           display: inline-block;
         }
         .like-share2 {
           position: absolute;
           right: -25px;
+          top: 25px;
           display: inline-block;
         }
         .like-share3 {
           position: absolute;
           right: -25px;
+          top: 25px;
           display: inline-block;
         }
         .facebook1 {
