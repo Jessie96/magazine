@@ -33,10 +33,16 @@
         a {
           color: blue;
         }
-        .swiper-slide img {
+        .img1 img {
           display: block;
+          margin-top: 30px;
           height: 400px;
           width: 750px;
+        }
+        .img2 img {
+          display: block;
+          position: relative;
+          width: 375px;
         }
         .swiper-slide p {
           color: #000;
@@ -212,19 +218,40 @@
           left: 5%;
         }
         .text-holder1 {
+          display: block;
           position: absolute;
           color: #000;
-          margin-top: 410px;
+          margin-top: 430px;
           margin-left: 50px;
+          width: 700px;
+          margin-right: -80px;
         }
-        h1 {
+        .text-holder1 h1 {
+          text-align: left;
           font-weight: bold;
-          margin-left: -570px;
+          margin-top: 0px;
         }
-        h2 {
+        .text-holder1 h2 {
+          text-align: left;
           color: #e6e600;
-          margin-left: -570px;
+          margin-top: 0px;
         }
-        .slide-inner p {
+        .text-holder1 p {
+          position: relative;
+          text-align: left;
+          display: block;
+          margin-top: 0px;
+          margin-bottom: 2px;
+        }
+        .text-holder2 {
+
+        }
+        .text-holder2 h1 {
+
+        }
+        .text-holder2 h2 {
+
+        }
+        .text-holder2 p {
           
         }
