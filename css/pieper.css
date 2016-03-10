@@ -279,7 +279,11 @@
         .item {
           background-color: #3a3a3a;
           border-bottom: solid yellow 3px;
-          height: 32.7%;
+          height: auto;
+        }
+        .item:hover {
+          color: yellow;
+          background-color: #8c8c8c;
         }
         #pagination > div:nth-child(1):hover {
           color: yellow;

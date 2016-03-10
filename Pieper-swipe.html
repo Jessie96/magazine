@@ -102,7 +102,7 @@
             </div>
 
             <!-- page 2 -->
-            <div class="swiper-slide" data-hash="Pagina2" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtiheading pieperblad 10 jaar">
+            <div class="swiper-slide" data-hash="Pagina2" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
 
                 <!-- like and share -->
                 <div class="like-share1">
@@ -237,7 +237,7 @@
                 </div>
 
                 <!-- page 3 -->
-                <div class="swiper-slide" data-hash="Pagina3" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtiheading pieperblad 10 jaar">
+                <div class="swiper-slide" data-hash="Pagina3" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
 
                     <!-- like and share -->
                     <div class="like-share1">
@@ -287,19 +287,23 @@
                             <img src="http://img.timeinc.net/time/magazine/archive/covers/2006/1101061023_400.jpg"/>
                         </div>
                             <div id="vorige2">
-                                </div>
-                                <!-- <a href="#" class="myButton"><</a> -->
+
                             </div>
-                        </div> 
+                                <!-- <a href="#" class="myButton"><</a> -->
+                    </div>
+    </div> 
+
                     <!-- page 4 -->
-            <div class="swiper-slide" data-hash="Pagina4" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtiheading pieperblad 10 jaar">
-                </div>
+            <div class="swiper-slide" data-hash="Pagina4" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
+            </div>
+
                 <!-- page 5 -->
-            <div class="swiper-slide" data-hash="Pagina5" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtiheading pieperblad 10 jaar">
-                </div>
+            <div class="swiper-slide" data-hash="Pagina5" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
+            </div>
+
                 <!-- page 6 -->
-            <div class="swiper-slide" data-hash="Pagina6" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subtiheading pieperblad 10 jaar">
-                </div>
+            <div class="swiper-slide" data-hash="Pagina6" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
+            </div>
                 </div>
                 <!-- Add pagination -->
                     <div id="pagination">
@@ -309,7 +313,7 @@
                     <div class="swiper-button-prev"><I class="fa fa-chevron-left fa-4x"></i></div>
                 </div>
             </div>
-                        <!-- info -->
+                <!-- info -->
                 <div class="info">
                         <i class="fa fa-square fa-5x">
                         </i>
@@ -352,7 +356,8 @@
                             </a><br>
                         </div>
                     </div>
-                </div>  
+                </div>
+
                     <!-- JS -->
                 <script>
 
@@ -400,6 +405,11 @@
                             });
                             $("#vorige2").click(function() {
                                 swiper.slidePrev(false, 800);
+                            });
+
+                            //pagination scroll to\\
+                            $(".right").click(function() {
+                                pagination.scrollto($(this).data('50%'));
                             });
                     }();
     </script>
