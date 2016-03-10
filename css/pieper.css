@@ -41,8 +41,11 @@
         }
         .img2 img {
           display: block;
-          position: relative;
-          width: 375px;
+          right: 0;
+          position: absolute;
+          margin-top: 60px;
+          height: 300px;
+          width: 450px;
         }
         .swiper-slide p {
           color: #000;
@@ -167,20 +170,23 @@
         .like-share1 {
           position: absolute;
           right: -25px;
-          top: 25px;
+          top: 50px;
           display: inline-block;
+          z-index: 5;
         }
         .like-share2 {
           position: absolute;
           right: -25px;
-          top: 25px;
+          top: 50px;
           display: inline-block;
+          z-index: 5;
         }
         .like-share3 {
           position: absolute;
           right: -25px;
-          top: 25px;
+          top: 50px;
           display: inline-block;
+          z-index: 5;
         }
         .facebook1 {
           position: absolute;
@@ -218,13 +224,20 @@
           left: 5%;
         }
         .text-holder1 {
-          display: block;
+          /*display: block;*/
           position: absolute;
           color: #000;
           margin-top: 430px;
           margin-left: 50px;
-          width: 700px;
+          /*width: 700px;*/
           margin-right: -80px;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 700px;
+          max-height: 500px;
+          border-left:1em solid transparent;
+          border-right:1em solid transparent;
+          /*text-overflow: ellipsis;*/
         }
         .text-holder1 h1 {
           text-align: left;
@@ -243,8 +256,33 @@
           margin-top: 0px;
           margin-bottom: 2px;
         }
-        .text-holder2 {
-
+        .text-holder2 p {
+          position: absolute;
+          color: #000;
+          margin-top: 80px;
+          margin-left: 50px;
+          margin-right: -80px;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 300px;
+          max-height: 700px;
+          border-left:1em solid transparent;
+          border-right:1em solid transparent;
+          text-align: left;
+        }
+        .text-holder2 h1 {
+          position: absolute;
+          color: #000;
+          margin-top: 30px;
+          margin-left: 50px;
+          margin-right: -80px;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 700px;
+          max-height: 500px;
+          border-left:1em solid transparent;
+          border-right:1em solid transparent;
+          text-align: left;
         }
         .text-holder2 h1 {
 
