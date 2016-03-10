@@ -284,12 +284,17 @@
           border-right:1em solid transparent;
           text-align: left;
         }
-        .text-holder2 h1 {
-
-        }
-        .text-holder2 h2 {
-
-        }
-        .text-holder2 p {
-          
+        .text-holder3 {
+          position: absolute;
+          color: #000;
+          margin-top: 364px;
+          margin-left: 390px;
+          margin-right: 0px;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 300px;
+          max-height: 700px;
+          border-left:1em solid transparent;
+          border-right:1em solid transparent;
+          text-align: left;
         }
