@@ -47,6 +47,12 @@
           height: 300px;
           width: 450px;
         }
+        .img3 img {
+          position: absolute;
+          width: 860px;
+          height: 881px;
+          margin-left: -420px;
+        }
         .swiper-slide p {
           color: #000;
           display: block;
@@ -242,18 +248,15 @@
         .text-holder1 h1 {
           text-align: left;
           font-weight: bold;
-          margin-top: 0px;
         }
         .text-holder1 h2 {
           text-align: left;
           color: #e6e600;
-          margin-top: 0px;
         }
         .text-holder1 p {
           position: relative;
           text-align: left;
           display: block;
-          margin-top: 0px;
           margin-bottom: 2px;
         }
         .text-holder2 p {
@@ -289,7 +292,40 @@
           color: #000;
           margin-top: 364px;
           margin-left: 390px;
-          margin-right: 0px;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 300px;
+          max-height: 700px;
+          border-left:1em solid transparent;
+          border-right:1em solid transparent;
+          text-align: left;
+        }
+        .text-holder4 {
+          position: absolute;
+          text-align: left;
+          color: #e6e600;
+          margin-top: 500px;
+          margin-left: 80px;
+          text-align: center;
+        }
+        .text-holder5 {
+          position: absolute;
+          color: #000;
+          margin-top: 560px;
+          margin-left: 390px;
+          white-space: nowrap;
+          overflow: hidden;
+          max-width: 300px;
+          max-height: 700px;
+          border-left:1em solid transparent;
+          border-right:1em solid transparent;
+          text-align: left;
+        }
+        .text-holder6 {
+          position: absolute;
+          color: #000;
+          margin-top: 560px;
+          margin-left: 50px;
           white-space: nowrap;
           overflow: hidden;
           max-width: 300px;
