@@ -295,14 +295,17 @@
 
                     <!-- page 4 -->
             <div class="swiper-slide" data-hash="Pagina4" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
+                <p>qwer</p>
             </div>
 
                 <!-- page 5 -->
             <div class="swiper-slide" data-hash="Pagina5" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
+                <p>qwer</p>
             </div>
 
                 <!-- page 6 -->
             <div class="swiper-slide" data-hash="Pagina6" data-tn="http://qwerqwer" data-title="Heading met ruimte <br> voor twee regels"data-subtitle="subheading pieperblad 10 jaar">
+                <p>qwer</p>
             </div>
                 </div>
                 <!-- Add pagination -->
@@ -378,7 +381,7 @@
                             paginationBulletRender: function(index, className) {
                                 var slide = swiperWrapper.find('.swiper-slide').get(index);
                                 var slide = $(slide);
-                                var ret = '<div class="item" data-index="'+index+'"><div class="tn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Circle_-_black_simple_fullpage.svg/2000px-Circle_-_black_simple_fullpage.svg.png" hight="40" width="40"></div><div class="right">';
+                                var ret = '<div class="item" data-index="'+index+'"><div class="tn"><i class="fa fa-circle fa-3x"></i></div><div class="right">';
                                     ret += '<h3> <br>' + slide.data('title') + '</h3>' + '<br>';
                                     if (slide.data('subtitle') != undefined) {
                                         ret += '<h5> <br>' + slide.data('subtitle') + '</h5>';

@@ -297,11 +297,12 @@
           color: yellow;
           background-color: #8c8c8c;
         }
-        .tn img {
+        .tn .fa {
           position: absolute;
           margin-top: 5%;
           margin-left: 5%;
           display: block;
+          color: white;
         }
         h3 {
           display: block;
