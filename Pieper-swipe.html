@@ -433,13 +433,14 @@
                             swiper.slidePrev(false, 800);
                         });
 
-                            //pagination scroll to\\
-                            $(".right").click(function() {
-                                pagination.scrollto($(this).data('50%'));
-                            });
                             //reset pagination scrollbar\\
-                            $(document).ready(function(){
+                            $(document).ready(function() {
                                 $("#pagination").scrollTop(0);
+                            });
+
+                            //reset page scrollbar\\
+                            $(document).ready(function() {
+                                $(".swiper-slide").scrollTop(0);
                             });
                         }();
                         </script>

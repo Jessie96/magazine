@@ -1,21 +1,21 @@
           /* Styles */
-        html, body {
-          position: relative;
-          height: 100%;
-        }
-        body {
-          background: #404040;
-          overflow: hidden;
-          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 14px;
-          color: white;
-          margin: 0;
-          padding: 0;
-        }
+          html, body {
+            position: relative;
+            height: 100%;
+          }
+          body {
+            background: #404040;
+            overflow: hidden;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: white;
+            margin: 0;
+            padding: 0;
+          }
  /*       ::-webkit-scrollbar
         {
           width: 12px;  /* for vertical scrollbars */
-        /*  height: 12px; /* for horizontal scrollbars */
+          /*  height: 12px; /* for horizontal scrollbars */
         /*}
 
        /* ::-webkit-scrollbar-track
@@ -26,87 +26,87 @@
         ::-webkit-scrollbar-thumb
         {
           background: rgba(0, 0, 0, 0.5);
-        }*/
-        .swiper-container {
-          width: 100%;
-          height: 97%;
-          position: static;
-        }
-        .swiper-slide {
-          margin-top: 2%;
-          height: 96%;
-          text-align: center;
-          position: static;
-          font-size: 18px;
-          background: #fff;
-        }
-        .slide-inner {
-          overflow:scroll;
-          height:100%;
-          overflow-x:hidden;
-        }
-        a {
-          color: blue;
-        }
-        .img1 img {
-          display: block;
-          margin-top: 30px;
-          height: 400px;
-          width: 750px;
-        }
-        .img2 img {
-          display: block;
-          right: 0;
-          position: absolute;
-          margin-top: 60px;
-          height: 300px;
-          width: 450px;
-        }
-        .img3 img {
-          position: absolute;
-          width: 860px;
-          height: 881px;
-          margin-left: -420px;
-        }
-        .swiper-slide p {
-          color: #000;
-          display: block;
-          margin-top: 1.5%;
-          margin-bottom: 1.7%;
-        }
-        .info {
-          z-index: 3;
-          bottom: 0;
-          left: 0;
-          text-align: left;
-          display: inline;
-          font-family: Helvetica, Arial;
-          color: white;
-          position: absolute;
-        }
-        .info p {
-          display: inline-block;
-          border: solid 10px #262626;
-          border-right-color: yellow;
-          background: #262626;
-          margin-top: -25%;
-          margin-bottom: 20px;
-          padding-left: 100px;
-          padding-right: 30px;
-        }
-        .info a:visited {
-          color: purple;
-        }
-        .ico {
-          position: absolute;
-          bottom: 50%;
-        }
+          }*/
+          .swiper-container {
+            width: 100%;
+            height: 97%;
+            position: static;
+          }
+          .swiper-slide {
+            margin-top: 2%;
+            height: 96%;
+            text-align: center;
+            position: static;
+            font-size: 18px;
+            background: #fff;
+          }
+          .slide-inner {
+            overflow:scroll;
+            height:100%;
+            overflow-x:hidden;
+          }
+          a {
+            color: blue;
+          }
+          .img1 img {
+            display: block;
+            margin-top: 30px;
+            height: 400px;
+            width: 750px;
+          }
+          .img2 img {
+            display: block;
+            right: 0;
+            position: absolute;
+            margin-top: 60px;
+            height: 300px;
+            width: 450px;
+          }
+          .img3 img {
+            position: absolute;
+            width: 860px;
+            height: 881px;
+            margin-left: -420px;
+          }
+          .swiper-slide p {
+            color: #000;
+            display: block;
+            margin-top: 1.5%;
+            margin-bottom: 1.7%;
+          }
+          .info {
+            z-index: 3;
+            bottom: 0;
+            left: 0;
+            text-align: left;
+            display: inline;
+            font-family: Helvetica, Arial;
+            color: white;
+            position: absolute;
+          }
+          .info p {
+            display: inline-block;
+            border: solid 10px #262626;
+            border-right-color: yellow;
+            background: #262626;
+            margin-top: -25%;
+            margin-bottom: 20px;
+            padding-left: 100px;
+            padding-right: 30px;
+          }
+          .info a:visited {
+            color: purple;
+          }
+          .ico {
+            position: absolute;
+            bottom: 50%;
+          }
         /*#volgende1 {
           display: inline-block;
           position: absolute;
           bottom: 0;
           right: 0;
-        }*/
+          }*/
         /*#volgende1 {
           -moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
           -webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
@@ -278,253 +278,254 @@
         #vorige2:active {
           position:relative;
           top:1px;
-        }*/
-        #pagination {
-          position: absolute;
-          top: 0;
-          right: 0;
-          z-index:10;
-          overflow-y: scroll;
-          overflow-x: hidden;
-          background: gray;
-          width: 15%;
-          height: 100%;
-          /*width: 960px;*/
-          /*position: relative;*/
-          /*margin:0 auto;*/
-          /*line-height: 1.4em;*/
-        }
-        .item {
-          background-color: #3a3a3a;
-          border-bottom: solid yellow 3px;
-          height: auto;
-        }
-        .item:hover {
-          color: yellow;
-          background-color: #8c8c8c;
-        }
-        #pagination > div:nth-child(1):hover {
-          color: yellow;
-          background-color: #8c8c8c;
-        }
-        #pagination > div:nth-child(2):hover {
-          color: yellow;
-          background-color: #8c8c8c;
-        }
-        #pagination > div:nth-child(3):hover {
-          color: yellow;
-          background-color: #8c8c8c;
-        }
-        .tn .fa {
-          position: absolute;
-          margin-top: 5%;
-          margin-left: 5%;
-          display: block;
-          color: white;
-        }
-        h3 {
-          display: block;
-          margin-left: 25%;
-          font-size: 130%;
-          letter-spacing: 3px;
-        }
-        h5 {            
-          font-size: 100%;
-          height: 245px;
-          margin-left: 25%;
-          margin-top: -8%;
-        }
-        .pagi-footer {
-          bottom: 0;
-          right: 0;
-          position: absolute;
-          border: solid yellow 3px;
-          z-index: 3;
-          display: inline-block;
-          background-color: yellow;
-          width: 10.7%;
-          padding-left: 2%;
-          padding-top: 0.5%;
-          padding-bottom: 0.5%;
-          padding-right: 2%;
-        }
-        .pagi-footer p {
-          color: #000;
-          display: inline-block;
-          margin-left: 25%;
-        }
-        .like-share1 {
-          position: absolute;
-          right: -25px;
-          top: 50px;
-          display: inline-block;
-          z-index: 5;
-        }
-        .like-share2 {
-          position: absolute;
-          right: -25px;
-          top: 50px;
-          display: inline-block;
-          z-index: 5;
-        }
-        .like-share3 {
-          position: absolute;
-          right: -25px;
-          top: 50px;
-          display: inline-block;
-          z-index: 5;
-        }
-        .facebook1 {
-          position: absolute;
-          margin-top: -20px;
-          margin-left: 120px;
-        }
-        body > div.pagi-footer > div.facebook1 > div > a > i.fa.fa-facebook.fa-stack-1x {
-          position: absolute;
-          margin-left: 7px;
-          margin-top: 5px;
-        }
-        .linkedin1 {
-          position: absolute;
-          margin-top: -20px;
-          margin-left: 150px;
-        }
-        body > div.pagi-footer > div.linkedin1 > div > a > i.fa.fa-linkedin.fa-stack-1x {
-          position: absolute;
-          margin-top: 4px;
-          margin-left: 6px;
-        }
-        .twitter1 {
-          position: absolute;
-          margin-top: -20px;
-          margin-left: 180px;
-        }
-        body > div.pagi-footer > div.twitter1 > div > a > i.fa.fa-twitter.fa-stack-1x {
-          position: absolute;
-          margin-top: 5px;
-          margin-left: 6px;
-        }
-        body > div.info > i {
-          position: absolute;
-          bottom: 60%;
-          left: 5%;
-        }
-        .text-holder1 {
-          /*display: block;*/
-          position: absolute;
-          color: #000;
-          margin-top: 430px;
-          margin-left: 50px;
-          /*width: 700px;*/
-          margin-right: -80px;
-          white-space: nowrap;
-          overflow: hidden;
-          max-width: 700px;
-          max-height: 500px;
-          border-left:1em solid transparent;
-          border-right:1em solid transparent;
-          /*text-overflow: ellipsis;*/
-        }
-        .text-holder1 h1 {
-          text-align: left;
-          font-weight: bold;
-        }
-        .text-holder1 h2 {
-          text-align: left;
-          color: #e6e600;
-        }
-        .text-holder1 p {
-          position: relative;
-          text-align: left;
-          display: block;
-          margin-bottom: 2px;
-        }
-        .text-holder2 p {
-          position: absolute;
-          color: #000;
-          margin-top: 80px;
-          margin-left: 50px;
-          margin-right: -80px;
-          white-space: nowrap;
-          overflow: hidden;
-          max-width: 300px;
-          max-height: 700px;
-          border-left:1em solid transparent;
-          border-right:1em solid transparent;
-          text-align: left;
-        }
-        .text-holder2 h1 {
-          position: absolute;
-          color: #000;
-          margin-top: 30px;
-          margin-left: 50px;
-          margin-right: -80px;
-          white-space: nowrap;
-          overflow: hidden;
-          max-width: 700px;
-          max-height: 500px;
-          border-left:1em solid transparent;
-          border-right:1em solid transparent;
-          text-align: left;
-        }
-        .text-holder3 {
-          position: absolute;
-          color: #000;
-          margin-top: 364px;
-          margin-left: 390px;
-          white-space: nowrap;
-          overflow: hidden;
-          max-width: 300px;
-          max-height: 700px;
-          border-left:1em solid transparent;
-          border-right:1em solid transparent;
-          text-align: left;
-        }
-        .text-holder4 {
-          position: absolute;
-          text-align: left;
-          color: #e6e600;
-          margin-top: 500px;
-          margin-left: 80px;
-          text-align: center;
-        }
-        .text-holder5 {
-          position: absolute;
-          color: #000;
-          margin-top: 560px;
-          margin-left: 390px;
-          white-space: nowrap;
-          overflow: hidden;
-          max-width: 300px;
-          max-height: 700px;
-          border-left:1em solid transparent;
-          border-right:1em solid transparent;
-          text-align: left;
-        }
-        .text-holder6 {
-          position: absolute;
-          color: #000;
-          margin-top: 560px;
-          margin-left: 50px;
-          white-space: nowrap;
-          overflow: hidden;
-          max-width: 300px;
-          max-height: 700px;
-          border-left:1em solid transparent;
-          border-right:1em solid transparent;
-          text-align: left;
-        }
-        body > div.swiper-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow > div.swiper-button-next {
-          margin-right: 430px;
-          position: absolute;
-          height: 0px;
-          width: 0px;
-          color: yellow;
-        }
-        body > div.swiper-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow > div.swiper-button-prev {
-          margin-left: 410px;
-          position: absolute;
-          height: 0px;
-          width: 0px;
-          color: yellow;
-        }
+          }*/
+          #pagination {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index:10;
+            display:inline;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background: #3a3a3a;
+            width: auto;
+            max-width: 15%;
+            height: auto;
+            max-height: 99%;
+          }
+          .item {
+            background-color: #3a3a3a;
+            border-bottom: solid yellow 3px;
+            height: auto;
+            max-height: 99%;
+          }
+          .item:hover {
+            color: yellow;
+            background-color: gray;
+          }
+          #pagination > div:nth-child(1):hover {
+            color: yellow;
+            background-color: gray;
+          }
+          #pagination > div:nth-child(2):hover {
+            color: yellow;
+            background-color: gray;
+          }
+          #pagination > div:nth-child(3):hover {
+            color: yellow;
+            background-color: gray;
+          }
+          .tn .fa {
+            position: absolute;
+            margin-top: 5%;
+            margin-left: 5%;
+            display: block;
+            color: white;
+          }
+          h3 {
+            display: block;
+            margin-left: 25%;
+            font-size: 130%;
+            letter-spacing: 3px;
+          }
+          h5 {
+            font-size: 100%;
+            height: 245px;
+            margin-left: 25%;
+            margin-top: -8%;
+          }
+          .pagi-footer {
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            border: solid yellow 3px;
+            z-index: 3;
+            display: inline-block;
+            background-color: yellow;
+            /*width: auto;*/
+            width: 10.7%;
+            padding-left: 2%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            padding-right: 2%;
+          }
+          .pagi-footer p {
+            color: #000;
+            display: inline-block;
+            margin-left: 25%;
+          }
+          .like-share1 {
+            position: absolute;
+            right: -25px;
+            top: 50px;
+            display: inline-block;
+            z-index: 5;
+          }
+          .like-share2 {
+            position: absolute;
+            right: -25px;
+            top: 50px;
+            display: inline-block;
+            z-index: 5;
+          }
+          .like-share3 {
+            position: absolute;
+            right: -25px;
+            top: 50px;
+            display: inline-block;
+            z-index: 5;
+          }
+          .facebook1 {
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 120px;
+          }
+          body > div.pagi-footer > div.facebook1 > div > a > i.fa.fa-facebook.fa-stack-1x {
+            position: absolute;
+            margin-left: 7px;
+            margin-top: 5px;
+          }
+          .linkedin1 {
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 150px;
+          }
+          body > div.pagi-footer > div.linkedin1 > div > a > i.fa.fa-linkedin.fa-stack-1x {
+            position: absolute;
+            margin-top: 4px;
+            margin-left: 6px;
+          }
+          .twitter1 {
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 180px;
+          }
+          body > div.pagi-footer > div.twitter1 > div > a > i.fa.fa-twitter.fa-stack-1x {
+            position: absolute;
+            margin-top: 5px;
+            margin-left: 6px;
+          }
+          body > div.info > i {
+            position: absolute;
+            bottom: 60%;
+            left: 5%;
+          }
+          .text-holder1 {
+            /*display: block;*/
+            position: absolute;
+            color: #000;
+            margin-top: 430px;
+            margin-left: 50px;
+            /*width: 700px;*/
+            margin-right: -80px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 700px;
+            max-height: 500px;
+            border-left:1em solid transparent;
+            border-right:1em solid transparent;
+            /*text-overflow: ellipsis;*/
+          }
+          .text-holder1 h1 {
+            text-align: left;
+            font-weight: bold;
+          }
+          .text-holder1 h2 {
+            text-align: left;
+            color: #e6e600;
+          }
+          .text-holder1 p {
+            position: relative;
+            text-align: left;
+            display: block;
+            margin-bottom: 2px;
+          }
+          .text-holder2 p {
+            position: absolute;
+            color: #000;
+            margin-top: 80px;
+            margin-left: 50px;
+            margin-right: -80px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 300px;
+            max-height: 700px;
+            border-left:1em solid transparent;
+            border-right:1em solid transparent;
+            text-align: left;
+          }
+          .text-holder2 h1 {
+            position: absolute;
+            color: #000;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: -80px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 700px;
+            max-height: 500px;
+            border-left:1em solid transparent;
+            border-right:1em solid transparent;
+            text-align: left;
+          }
+          .text-holder3 {
+            position: absolute;
+            color: #000;
+            margin-top: 364px;
+            margin-left: 390px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 300px;
+            max-height: 700px;
+            border-left:1em solid transparent;
+            border-right:1em solid transparent;
+            text-align: left;
+          }
+          .text-holder4 {
+            position: absolute;
+            text-align: left;
+            color: #e6e600;
+            margin-top: 500px;
+            margin-left: 80px;
+            text-align: center;
+          }
+          .text-holder5 {
+            position: absolute;
+            color: #000;
+            margin-top: 560px;
+            margin-left: 390px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 300px;
+            max-height: 700px;
+            border-left:1em solid transparent;
+            border-right:1em solid transparent;
+            text-align: left;
+          }
+          .text-holder6 {
+            position: absolute;
+            color: #000;
+            margin-top: 560px;
+            margin-left: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 300px;
+            max-height: 700px;
+            border-left:1em solid transparent;
+            border-right:1em solid transparent;
+            text-align: left;
+          }
+          body > div.swiper-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow > div.swiper-button-next {
+            margin-right: 430px;
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            color: yellow;
+          }
+          body > div.swiper-container.swiper-container-horizontal.swiper-container-3d.swiper-container-coverflow > div.swiper-button-prev {
+            margin-left: 410px;
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            color: yellow;
+          }
