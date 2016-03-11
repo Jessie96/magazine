@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="../pieper-blad/dist/js/swiper.js"></script>
-    <style type="text/css">
-/*@-moz-document url-prefix() {
+    <!-- style type="text/css">
+@-moz-document url-prefix() {
     #vorige2 {
         margin-bottom: -20px;
     }
-    }*/
-    </style>
+    }
+</style -->
 </head>
 <body>
 
@@ -29,6 +29,7 @@
 
             <!-- page 1 -->
             <div class="swiper-slide" data-hash="Pagina1" data-tn="http://qwerqwer" data-title="Cover <br> Pieper blad" data-subtitle="subheading pieperblad 10 jaar">
+
                 <!-- like and share -->
                 <div class="like-share1">
                     <div class="facebook">
@@ -351,8 +352,8 @@
 
     <!-- pagi-footer -->
     <div class="pagi-footer">
-     <p> volg ons:</p>
-     <div class="facebook1">
+       <p> volg ons:</p>
+       <div class="facebook1">
         <div class="fa-stackfa-lga">
             <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
                 <i class="fa fa-circle fa-stack-2x" style="color:white">
@@ -387,62 +388,65 @@
 <!-- JS -->
 <script>
 
-                    //initialize swiper\\
-                    !function() {
-                        var indexContainer = [];
-                        var swiperWrapper = $('.swiper-wrapper');
-                        var swiper = new Swiper('.swiper-container', {
-                            pagination: '#pagination',
-                            nextButton: '.swiper-button-next',
-                            prevButton: '.swiper-button-prev',
-                            effect: 'coverflow',
-                            loop: false,
-                            speed: 800,
-                            iOSEdgeSwipeDetection: false,
-                            ìOSEdgeSwipeThreshold: 10,
-                            scrollbarhide: true,
-                            paginationBulletRender: function(index, className) {
-                                var slide = swiperWrapper.find('.swiper-slide').get(index);
-                                var slide = $(slide);
-                                var ret = '<div class="item" data-index="'+index+'"><div class="tn"><i class="fa fa-circle fa-3x"></i></div><div class="right">';
-                                ret += '<h3> <br>' + slide.data('title') + '</h3>' + '<br>';
-                                if (slide.data('subtitle') != undefined) {
-                                    ret += '<h5> <br>' + slide.data('subtitle') + '</h5>';
-                                }
-                                ret += '</div></div>';
-                                return ret;
-                            }
-                        });
+//initialize swiper\\
+!function() {
+    var indexContainer = [];
+    var swiperWrapper = $('.swiper-wrapper');
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '#pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        effect: 'coverflow',
+        loop: false,
+        speed: 800,
+        iOSEdgeSwipeDetection: false,
+        ìOSEdgeSwipeThreshold: 10,
+        scrollbarhide: false,
+        paginationBulletRender: function(index, className) {
+            var slide = swiperWrapper.find('.swiper-slide').get(index);
+            var slide = $(slide);
+            var ret = '<div class="item" data-index="'+index+'"><div class="tn"><i class="fa fa-circle fa-3x"></i></div><div class="right">';
+            ret += '<h3> <br>' + slide.data('title') + '</h3>' + '<br>';
+            if (slide.data('subtitle') != undefined) {
+                ret += '<h5> <br>' + slide.data('subtitle') + '</h5>';
+            }
+            ret += '</div></div>';
+            return ret;
+        }
+    });
 
-                        //pagi nav\\
-                        $('#pagination').on('click', '.item', function() {
-                            swiper.slideTo($(this).data('index'));
-                        }); 
+    //pagi nav\\
+    $('#pagination').on('click', '.item', function() {
+        swiper.slideTo($(this).data('index'));
+    }); 
 
-                           //button nav\\
-                           $("#volgende1").click(function() {
-                            swiper.slideNext(false, 800);
-                        });
-                           $("#volgende2").click(function() {
-                            swiper.slideNext(false, 800);
-                        });
-                           $("#vorige1").click(function() {
-                            swiper.slidePrev(false, 800);
-                        });
-                           $("#vorige2").click(function() {
-                            swiper.slidePrev(false, 800);
-                        });
+       //button nav\\
+       $("#volgende1").click(function() {
+        swiper.slideNext(false, 800);
+    });
+       $("#volgende2").click(function() {
+        swiper.slideNext(false, 800);
+    });
+       $("#vorige1").click(function() {
+        swiper.slidePrev(false, 800);
+    });
+       $("#vorige2").click(function() {
+        swiper.slidePrev(false, 800);
+    });
 
-                            //reset pagination scrollbar\\
-                            $(document).ready(function() {
-                                $("#pagination").scrollTop(0);
-                            });
+        //reset pagination scrollbar\\
+        $(document).ready(function() {
+            $("#pagination").scrollTop(0);
+        });
 
-                            //reset page scrollbar\\
-                            $(document).ready(function() {
-                                $(".swiper-slide").scrollTop(0);
-                            });
-                        }();
-                        </script>
-                    </body>
-                    </html>
+        //reset page scrollbar\\
+        $(document).ready(function() {
+            $(".swiper-slide").scrollTop(0);
+        });
+
+        //active scroll\\
+        
+    }();
+    </script>
+</body>
+</html>
