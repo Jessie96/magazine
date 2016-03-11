@@ -288,8 +288,7 @@
             overflow-y: scroll;
             overflow-x: hidden;
             background: #3a3a3a;
-            width: auto;
-            max-width: 15%;
+            width: 15%;
             height: auto;
             max-height: 99%;
           }
