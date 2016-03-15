@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Pieper swiper</title>
+    <title>Pieper swipe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Link Swiper's CSS -->
@@ -352,8 +352,8 @@
 
     <!-- pagi-footer -->
     <div class="pagi-footer">
-       <p> volg ons:</p>
-       <div class="facebook1">
+     <p> volg ons:</p>
+     <div class="facebook1">
         <div class="fa-stackfa-lga">
             <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
                 <i class="fa fa-circle fa-stack-2x" style="color:white">
@@ -371,7 +371,7 @@
                 <i class="fa fa-linkedin fa-stack-1x" style="color:yellow">
                 </i>
             </a><br>
-        </div>  
+        </div>
     </div>
     <div class="twitter1">
         <div class="fa-stackfa-lgc">
@@ -418,7 +418,7 @@
     //pagi nav\\
     $('#pagination').on('click', '.item', function() {
         swiper.slideTo($(this).data('index'));
-    }); 
+    });
 
        //button nav\\
        $("#volgende1").click(function() {
@@ -445,7 +445,15 @@
         });
 
         //active scroll\\
-        
+        if (swiper.slideNext) {
+            $(".item").click(function() {
+                var TopPos = $("#pagination").scrollTop();
+                console.log(TopPos);
+                $("#pagination").animate({
+                    scrollTop: TopPos + 309
+                }, 800);
+            });
+        };
     }();
     </script>
 </body>
