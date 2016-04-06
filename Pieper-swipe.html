@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Pieper swipe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="height=device-height"/>
 
     <!-- Link Swiper's CSS -->
 
@@ -344,8 +345,8 @@
 
     <!-- pagi-footer -->
     <div class="pagi-footer">
-       <p> volg ons:</p>
-       <div class="facebook1">
+     <p> volg ons:</p>
+     <div class="facebook1">
         <div class="fa-stackfa-lga">
             <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
                 <i class="fa fa-circle fa-stack-2x" style="color:white">
@@ -439,7 +440,7 @@
             var TopPos = $("#pagination").scrollTop();
             console.log(TopPos);
             $("#pagination").animate({
-                scrollTop: TopPos + 310
+                scrollTop: TopPos + 330
             }, 600);
         });
     }();
