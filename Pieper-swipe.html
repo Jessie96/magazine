@@ -407,13 +407,34 @@
         });
 
         //active scroll\\
-        $(".item").click(function() {
-            var TopPos = $("#pagination").scrollTop();
-            console.log(TopPos);
-            $("#pagination").animate({
-                scrollTop: TopPos + 317
-            }, 600);
-        });
+        var W = window.innerWidth;
+        window.onresize = function(){
+            W = window.innerWidth;
+        }
+
+        if (W >= 1030) {
+            $(".item").click(function() {
+                var TopPos = $("#pagination").scrollTop();
+                console.log(TopPos);
+                $("#pagination").animate({
+                    scrollTop: TopPos + 317
+                }, 600);
+            });
+        }
+        var w = window.innerWidth;
+        window.onresize = function(){
+            w = window.innerWidth;
+        }
+
+        if (w <= 1030) {
+            $(".item").click(function() {
+                var TopPos = $("#pagination").scrollTop();
+                console.log(TopPos);
+                $("#pagination").animate({
+                    scrollTop: TopPos + 345
+                }, 600);
+            });
+        }
     }();
     </script>
 </body>
