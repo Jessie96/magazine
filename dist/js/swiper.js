@@ -2734,9 +2734,9 @@ load: function () {
                 new s.controller.LinearSpline(s.snapGrid, c.snapGrid);
             },
             setTranslate: function (translate, byController) {
-               var controlled = s.params.control;
-               var multiplier, controlledTranslate;
-               function setControlledTranslate(c) {
+             var controlled = s.params.control;
+             var multiplier, controlledTranslate;
+             function setControlledTranslate(c) {
                     // this will create an Interpolate function based on the snapGrids
                     // x is the Grid of the scrolled scroller and y will be the controlled scroller
                     // it makes sense to create this only once and recall it for the interpolation
@@ -2763,19 +2763,19 @@ load: function () {
                 }
 
                 if (s.isArray(controlled)) {
-                   for (var i = 0; i < controlled.length; i++) {
-                       if (controlled[i] !== byController && controlled[i] instanceof Swiper) {
-                           setControlledTranslate(controlled[i]);
-                       }
-                   }
-               }
-               else if (controlled instanceof Swiper && byController !== controlled) {
+                 for (var i = 0; i < controlled.length; i++) {
+                     if (controlled[i] !== byController && controlled[i] instanceof Swiper) {
+                         setControlledTranslate(controlled[i]);
+                     }
+                 }
+             }
+             else if (controlled instanceof Swiper && byController !== controlled) {
                 
-                   setControlledTranslate(controlled);
-               }
-           },
+                 setControlledTranslate(controlled);
+             }
+         },
 
-           setTransition: function (duration, byController) {
+         setTransition: function (duration, byController) {
             var controlled = s.params.control;
             var i;
             function setControlledTransition(c) {
@@ -4137,7 +4137,7 @@ load: function () {
      ===========================*/
      var swiperDomPlugins = ['jQuery', 'Zepto', 'Dom7'];
      for (var i = 0; i < swiperDomPlugins.length; i++) {
-         if (window[swiperDomPlugins[i]]) {
+       if (window[swiperDomPlugins[i]]) {
           addLibraryPlugin(window[swiperDomPlugins[i]]);
       }
   }
