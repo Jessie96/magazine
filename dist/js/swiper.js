@@ -72,7 +72,7 @@
             scrollbarDraggable: true,
             scrollbarSnapOnRelease: true,
             // Keyboard Mousewheel
-            keyboardControl: true,
+            keyboardControl: false,
             mousewheelControl: false,
             mousewheelReleaseOnEdges: true,
             mousewheelInvert: false,
@@ -2770,7 +2770,7 @@ load: function () {
                    }
                }
                else if (controlled instanceof Swiper && byController !== controlled) {
-                
+
                    setControlledTranslate(controlled);
                }
            },
@@ -3135,7 +3135,7 @@ load: function () {
             return eventName;
         }
         s.emitterEventListeners = {
-            
+
         };
         s.emit = function (eventName) {
             // Trigger callbacks

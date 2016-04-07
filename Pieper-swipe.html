@@ -330,8 +330,8 @@
 
 <!-- pagi-footer -->
 <div class="pagi-footer">
- <p> volg ons:</p>
- <div class="facebook1">
+   <p> volg ons:</p>
+   <div class="facebook1">
     <div class="fa-stackfa-lga">
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <i class="fa fa-circle fa-stack-2x" style="color:white">
@@ -420,18 +420,43 @@
                     scrollTop: TopPos + 317
                 }, 600);
             });
-        }
-        var w = window.innerWidth;
-        window.onresize = function(){
-            w = window.innerWidth;
-        }
 
-        if (w <= 1030) {
-            $(".item").click(function() {
+            $('.swiper-button-next').click(function() {
+                var TopPos = $("#pagination").scrollTop();
+                console.log(TopPos);
+                $("#pagination").animate({
+                    scrollTop: TopPos + 317
+                }, 600);
+            });
+            $('.swiper-button-prev').click(function() {
+                var TopPos = $("#pagination").scrollTop();
+                console.log(TopPos);
+                $("#pagination").animate({
+                    scrollTop: TopPos - 317
+                }, 600);
+            });
+        }
+        if (W <= 1030) {
+               $(".item").click(function() {
                 var TopPos = $("#pagination").scrollTop();
                 console.log(TopPos);
                 $("#pagination").animate({
                     scrollTop: TopPos + 345
+                }, 600);
+            });
+
+            $('.swiper-button-next').click(function() {
+                var TopPos = $("#pagination").scrollTop();
+                console.log(TopPos);
+                $("#pagination").animate({
+                    scrollTop: TopPos + 345
+                }, 600);
+            });
+            $('.swiper-button-prev').click(function() {
+                var TopPos = $("#pagination").scrollTop();
+                console.log(TopPos);
+                $("#pagination").animate({
+                    scrollTop: TopPos - 345
                 }, 600);
             });
         }
