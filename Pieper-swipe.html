@@ -307,7 +307,7 @@
     </div>
 
     <!-- Add pagination -->
-    <div class= "container">
+    <div class="container">
         <div id="pagination">
         </div>
     </div>
@@ -376,12 +376,15 @@
         prevButton: '.swiper-button-prev',
         effect: 'coverflow',
         speed: 800,
+        keyboardControl: false,
+        autoheight: true,
+        mousewheelControl: false,
         iOSEdgeSwipeDetection: false,
         iOSEdgeSwipeThreshold: 10,
         paginationBulletRender: function(index, className) {
             var slide = swiperWrapper.find('.swiper-slide').get(index);
             var slide = $(slide);
-            var ret = '<div class="item" data-index="'+index+'"><div class="tn"><i class="fa fa-circle fa-2x"></i></div><div class="right">';
+            var ret = '<div class="item" data-index="'+index+'"><div class="right"><div class="tn"><i class="fa fa-circle fa-2x"></i></div>';
             ret += '<h3> <br>' + slide.data('title') + '</h3>' + '<br>';
             if (slide.data('subtitle') != undefined) {
                 ret += '<h5> <br>' + slide.data('subtitle') + '</h5>';
@@ -391,10 +394,10 @@
         }
     });
 
-    //pagi nav\\
-    $('#pagination').on('click', '.item', function() {
-        swiper.slideTo($(this).data('index'));
-    });
+        //pagi nav\\
+        $('#pagination').on('click', '.item', function() {
+           swiper.slideTo($(this).data('index'));
+       });
 
         //reset pagination scrollbar\\
         $(document).ready(function() {
@@ -406,10 +409,10 @@
             $(".swiper-slide").scrollTop(0);
         });
 
-        //active scroll\\
+        //hover scroll\\
         var W = window.innerWidth;
         window.onresize = function(){
-            W = window.innerWidth;
+            W = window.innerWidth
         }
 
         if (W >= 1030) {
@@ -417,7 +420,7 @@
                 var TopPos = $("#pagination").scrollTop();
                 console.log(TopPos);
                 $("#pagination").animate({
-                    scrollTop: TopPos + 317
+                    scrollTop: TopPos + 318
                 }, 600);
             });
 
@@ -425,7 +428,7 @@
                 var TopPos = $("#pagination").scrollTop();
                 console.log(TopPos);
                 $("#pagination").animate({
-                    scrollTop: TopPos + 317
+                    scrollTop: TopPos + 318
                 }, 600);
             });
 
@@ -433,7 +436,7 @@
                 var TopPos = $("#pagination").scrollTop();
                 console.log(TopPos);
                 $("#pagination").animate({
-                    scrollTop: TopPos - 317
+                    scrollTop: TopPos - 318
                 }, 600);
             });
         }
@@ -443,7 +446,7 @@
             var TopPos = $("#pagination").scrollTop();
             console.log(TopPos);
             $("#pagination").animate({
-                scrollTop: TopPos + 337
+                scrollTop: TopPos + 365
             }, 600);
         });
 
@@ -451,7 +454,7 @@
             var TopPos = $("#pagination").scrollTop();
             console.log(TopPos);
             $("#pagination").animate({
-                scrollTop: TopPos + 337
+                scrollTop: TopPos + 365
             }, 600);
         });
 
@@ -459,7 +462,7 @@
             var TopPos = $("#pagination").scrollTop();
             console.log(TopPos);
             $("#pagination").animate({
-                scrollTop: TopPos - 337
+                scrollTop: TopPos - 365
             }, 600);
         });
      }
