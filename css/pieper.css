@@ -129,6 +129,7 @@
             color: yellow;
             position: absolute;
             margin-left: 20%;
+            margin-bottom: 20%;
           }
           body > div.swiper-button-prev > i {
             margin-left: -25%;
