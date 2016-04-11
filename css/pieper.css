@@ -169,7 +169,7 @@
           .pagi-footer p {
             color: #000;
             display: inline;
-            margin-left: 2%;
+            margin-left: 20%;
           }
           .like-share1 {
             position: absolute;
@@ -195,17 +195,17 @@
           .facebook1 {
             position: absolute;
             margin-top: -20px;
-            margin-left: 70px;
+            margin-left: 45%;
           }
           body > div.pagi-footer > div.facebook1 > div > a > i.fa.fa-facebook.fa-stack-1x {
             position: absolute;
-            margin-left: 7px;
+            margin-left: 6px;
             margin-top: 5px;
           }
           .linkedin1 {
             position: absolute;
             margin-top: -20px;
-            margin-left: 100px;
+            margin-left: 60%;
           }
           body > div.pagi-footer > div.linkedin1 > div > a > i.fa.fa-linkedin.fa-stack-1x {
             position: absolute;
@@ -215,7 +215,7 @@
           .twitter1 {
             position: absolute;
             margin-top: -20px;
-            margin-left: 130px;
+            margin-left: 75%;
           }
           body > div.pagi-footer > div.twitter1 > div > a > i.fa.fa-twitter.fa-stack-1x {
             position: absolute;
