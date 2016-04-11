@@ -330,8 +330,8 @@
 
 <!-- pagi-footer -->
 <div class="pagi-footer">
-   <p> volg ons:</p>
-   <div class="facebook1">
+ <p> volg ons:</p>
+ <div class="facebook1">
     <div class="fa-stackfa-lga">
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <i class="fa fa-circle fa-stack-2x" style="color:white">
@@ -400,10 +400,10 @@
         }
     });
 
-        //pagi nav\\
+        //pagination\\
         $('#pagination').on('click', '.item', function() {
-         swiper.slideTo($(this).data('index'));
-     });
+           swiper.slideTo($(this).data('index'));
+       });
 
         //reset pagination scrollbar\\
         $(document).ready(function() {
@@ -417,11 +417,11 @@
 
         //hover scroll\\
         var W = window.innerWidth;
-        window.onresize = function(){
+        window.onresize = function() {
             W = window.innerWidth
         }
 
-        if (W >= 1030) {
+        if (W >= 1024) {
             $(".item").click(function() {
                 var TopPos = $("#pagination").scrollTop();
                 $("#pagination").animate({
@@ -444,29 +444,29 @@
             });
         }
 
-        if (W <= 1030) {
-           $(".item").click(function() {
+        if (W <= 1024) {
+         $(".item").click(function() {
             var TopPos = $("#pagination").scrollTop();
             $("#pagination").animate({
                 scrollTop: TopPos + 365
             }, 600);
         });
 
-           $('.swiper-button-next').click(function() {
+         $('.swiper-button-next').click(function() {
             var TopPos = $("#pagination").scrollTop();
             $("#pagination").animate({
                 scrollTop: TopPos + 365
             }, 600);
         });
 
-           $('.swiper-button-prev').click(function() {
+         $('.swiper-button-prev').click(function() {
             var TopPos = $("#pagination").scrollTop();
             $("#pagination").animate({
                 scrollTop: TopPos - 365
             }, 600);
         });
-       }
-   }();
-   </script>
+     }
+ }();
+ </script>
 </body>
 </html>
