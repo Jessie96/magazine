@@ -219,7 +219,7 @@
             </div>
 
             <!-- page 3 -->
-            <div class="swiper-slide" data-hash="Pagina2" data-tn="http://qwerqwer" data-title="Heading met ruimte<br>voor twee regels"data-subtitle="pieperblad 10 jaar">
+            <div class="swiper-slide" data-hash="Pagina3" data-tn="http://qwerqwer" data-title="Heading met ruimte<br>voor twee regels"data-subtitle="pieperblad 10 jaar">
 
                 <!-- like and share -->
                 <div class="like-share1">
@@ -332,8 +332,8 @@
 
 <!-- pagi-footer -->
 <div class="pagi-footer">
-   <p> volg ons:</p>
-   <div class="facebook1">
+ <p> volg ons:</p>
+ <div class="facebook1">
     <div class="fa-stackfa-lga">
         <a href="https://nl-nl.facebook.com/bureaupieper" target="_blank">
             <i class="fa fa-circle fa-stack-2x" style="color:white">
@@ -383,6 +383,7 @@
         lastSlideMessage: 'This is the last slide',
         paginationBulletMessage: 'Go to slide {{index}}',
         a11y: true,
+        hashnav: true,
         speed: 800,
         keyboardControl: false,
         autoheight: true,
@@ -406,18 +407,21 @@
 
         //pagination\\
         $('#pagination').on('click', '.item', function() {
-         swiper.slideTo($(this).data('index'));
-     });
+           swiper.slideTo($(this).data('index'));
+       });
+        $(document).ready('load', function() {
+            $('#pagination').scrollTo($(this).data('index'));
+        });
 
         //reset pagination scrollbar\\
-        $(document).ready(function() {
-            $("#pagination").scrollTop(0);
-        });
+        // $(document).ready(function() {
+        //     $("#pagination").scrollTop(0);
+        // });
 
         //reset swiper scrollbar\\
-        $(document).ready(function() {
-            $(".swiper-slide").scrollTop(0);
-        });
+        // $(document).ready(function() {
+        //     $(".swiper-slide").scrollTop(0);
+        // });
 
         //hover scroll\\
         var W = window.innerWidth;
@@ -449,27 +453,41 @@
         }
 
         if (W <= 1024) {
-           $(".item").click(function() {
+         $(".item").click(function() {
             var TopPos = $("#pagination").scrollTop();
             $("#pagination").animate({
                 scrollTop: TopPos + 365
             }, 600);
         });
 
-           $('.swiper-button-next').click(function() {
+         $('.swiper-button-next').click(function() {
             var TopPos = $("#pagination").scrollTop();
             $("#pagination").animate({
                 scrollTop: TopPos + 365
             }, 600);
         });
 
-           $('.swiper-button-prev').click(function() {
+         $('.swiper-button-prev').click(function() {
             var TopPos = $("#pagination").scrollTop();
             $("#pagination").animate({
                 scrollTop: TopPos - 365
             }, 600);
         });
-       }
+     }
+       //hash scroll\\
+     //   $(function() {
+     //    if(document.location.hash) {
+     //     $("#pagination").removeClass('selected');
+     //     s=$(document.location.hash.replace("btn_","")).addClass('selected').attr("div").replace("javascript:","");
+     //     eval(s);
+     // }
+
+    //  $("#pagination").click(function() {
+    //     $("#pagination").removeClass('selected');
+    //     $(this).addClass('selected');
+    //     document.location.hash="btn_"+$(this).attr("id")
+    // });
+ // });
    }();
    </script>
 </body>
